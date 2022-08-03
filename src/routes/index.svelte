@@ -1,4 +1,5 @@
 <script>
+	import Nav from '$lib/navbar.svelte';
 	let title = 'ini title';
 	const updateTitle = () => {
 		title = 'update title';
@@ -13,8 +14,7 @@
 	</p>
 	<button on:click={updateTitle}>Update</button>
 	<input type="text" bind:value={title} />
-	<a href="/guides">View Guides</a>
-	<a href="/about">About</a>
+	<Nav />
 </div>
 
 <style>

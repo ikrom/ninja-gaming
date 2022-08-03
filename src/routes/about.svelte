@@ -1,3 +1,7 @@
+<script>
+	import Nav from '$lib/navbar.svelte';
+</script>
+
 <div class="about">
 	<h2>About Us</h2>
 	<p>
@@ -5,8 +9,7 @@
 		itaque? Veniam assumenda est, nulla sequi cupiditate dolor officia, eveniet beatae nobis ad
 		vitae non repellat.
 	</p>
-	<a href="/guide">View Guides</a>
-	<a href="/">Home</a>
+	<Nav />
 </div>
 
 <style>

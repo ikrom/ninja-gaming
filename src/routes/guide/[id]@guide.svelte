@@ -1,10 +1,8 @@
 <script context="module">
-	import { page } from '$app/stores';
-
 	export async function load({ fetch, params }) {
 		const id = params.id;
-		console.log(id);
-		const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+		//const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+		const res = await fetch(`/guide/${id}.json`);
 		const guide = await res.json();
 
 		if (res.ok) {
